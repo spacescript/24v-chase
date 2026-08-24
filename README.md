@@ -1,6 +1,6 @@
 # 240 V on a 24 V defrost board
 
-**23 June 2025.** Carrier packaged rooftop heat pump. Defrost control **HK32EA005** (CEPL130856-01-R). **10.5 hours** logged. Site and customer not named.
+**23 June 2025.** ATI plant, Millersburg, Oregon. Carrier packaged rooftop heat pump. Defrost control **HK32EA005** (CEPL130856-01-R). **10.5 hours** logged.
 
 No data plate. I looked. Two-stage silk on the board (`SPPCOMPSTG2`, `DFT1` / `DFT2`). Return filters were 16x24 or 18x24, not a 5-divisible size, pulled from a hood on the side of the cabinet. That combination, on this board family, lines up with Carrier 50HCQ size 12. Inference, not a stamped SKU.
 
@@ -32,7 +32,7 @@ New contactor. New board. Wired to the print. It ran. 10.5 hours on the job.
 
 ## What I am not claiming
 
-This is a field postmortem, not a software project. I am not publishing the customer's print. I do not have a stamped cabinet SKU. 50HCQ size 12 is a filter-and-silk fit, not a plate reading.
+This is a field postmortem, not a software project. I am not publishing the unit print. I do not have a stamped cabinet SKU. 50HCQ size 12 is a filter-and-silk fit, not a plate reading. No street address, account number, or other tech's name.
 
 ## Photos
 
