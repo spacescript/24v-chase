@@ -1,6 +1,6 @@
 # 240 V on a 24 V defrost board
 
-**23 June 2025.** Packaged rooftop heat pump, Lennox / Allied family. Outdoor defrost control Honeywell 100269-05 (kit 84W88). Cabinet model unknown. Site and customer not named.
+**23 June 2025.** Packaged rooftop heat pump, Lennox / Allied family. Outdoor defrost control Honeywell 100269-05 (kit 84W88). **10.5 hours** logged. Cabinet model unknown. I looked for the data plate and did not find one. Site and customer not named.
 
 ## Call
 
@@ -18,17 +18,17 @@ Both diagnostic LEDs were on. On this 100269-05 revision that pattern is not in 
 
 I started taking voltages and found 240 V on the 24 V side of the board. That explains a lot.
 
-I got stuck and called OEM support. They emailed the wiring diagram and left me to keep tracing. The mix was at the auxiliary heater: 24 V control tied into 240 V line. On a heat-pump rooftop, defrost is supposed to call the strips with 24 V on W1. A sequencer then switches line voltage to the elements. Line from the strips should never land on P2 / P6.
+I got stuck and called OEM support. They emailed the wiring diagram and left me to keep tracing. That copy lived on a work phone I no longer have, so the print is not on this page. The mix was at the auxiliary heater: 24 V control tied into 240 V line. On a heat-pump rooftop, defrost is supposed to call the strips with 24 V on W1. A sequencer then switches line voltage to the elements. Line from the strips should never land on P2 / P6.
 
 The prior swap was described as wire for wire. That can be true and still kill the next board. If the landing is wrong, copying the landing copies the fault.
 
 ## Fix
 
-New contactor. New board. Wired to the print. It ran.
+New contactor. New board. Wired to the print. It ran. 10.5 hours on the job.
 
 ## What I am not claiming
 
-This is a field postmortem, not a software project. I am not publishing the customer's print. Hours are unlogged, so they are not on this page. I do not have a cabinet SKU and I am not guessing one.
+This is a field postmortem, not a software project. I am not publishing the customer's print. I looked for a cabinet SKU and did not get one, so I am not guessing.
 
 ## Photos
 
