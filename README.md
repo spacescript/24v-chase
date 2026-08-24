@@ -1,6 +1,8 @@
 # 240 V on a 24 V defrost board
 
-**23 June 2025.** Packaged rooftop heat pump, Lennox / Allied family. Outdoor defrost control Honeywell 100269-05 (kit 84W88). **10.5 hours** logged. Cabinet model unknown. I looked for the data plate and did not find one. Site and customer not named.
+**23 June 2025.** Carrier packaged rooftop heat pump. Defrost control **HK32EA005** (CEPL130856-01-R). **10.5 hours** logged. Site and customer not named.
+
+No data plate. I looked. Two-stage silk on the board (`SPPCOMPSTG2`, `DFT1` / `DFT2`). Return filters were 16x24 or 18x24, not a 5-divisible size, pulled from a hood on the side of the cabinet. That combination, on this board family, lines up with Carrier 50HCQ size 12. Inference, not a stamped SKU.
 
 ## Call
 
@@ -8,17 +10,19 @@ The unit had just had a contactor swapped, probably on a routine inspection. A c
 
 ## What I saw
 
-The burn was obvious. I still have both dead boards. Brown scorch sits on the Class-2 side, around the 24 V resistors (R17, R27, R30, R11), not on the 240 V fan relays.
+I still have both dead boards.
 
-This board puts 24 VAC control and 240 VAC fan switching on the same PCB. P2 is the 24 V field strip. Line voltage from the heat strips does not belong there.
+The older one is CEBD430856-06-RA, barcode HK32EA0052016. Aged. No burn-through.
 
-Both diagnostic LEDs were on. On this 100269-05 revision that pattern is not in the kit table. I logged it and kept metering.
+The newer one is CEBD430856-07-RA, barcode HK32EA0055024. Cleaner face, less aged, and obviously scorched. Carbon goes through the back at the OF / L1 / fan-relay pins.
+
+This board puts 24 V control and line-voltage fan switching on the same PCB. Electric heat is on the same board (`EHEAT`). Line from the heat strips does not belong on the 24 V side.
 
 ## Chase
 
 I started taking voltages and found 240 V on the 24 V side of the board. That explains a lot.
 
-I got stuck and called OEM support. They emailed the wiring diagram and left me to keep tracing. That copy lived on a work phone I no longer have, so the print is not on this page. The mix was at the auxiliary heater: 24 V control tied into 240 V line. On a heat-pump rooftop, defrost is supposed to call the strips with 24 V on W1. A sequencer then switches line voltage to the elements. Line from the strips should never land on P2 / P6.
+I got stuck and called OEM support. They emailed the wiring diagram and left me to keep tracing. That copy lived on a work phone I no longer have, so the print is not on this page. The mix was at the auxiliary heater: 24 V control tied into 240 V line. Defrost is supposed to call the strips with 24 V. A sequencer then switches line voltage to the elements. Line from the strips should never land on the Class-2 terminals.
 
 The prior swap was described as wire for wire. That can be true and still kill the next board. If the landing is wrong, copying the landing copies the fault.
 
@@ -28,24 +32,24 @@ New contactor. New board. Wired to the print. It ran. 10.5 hours on the job.
 
 ## What I am not claiming
 
-This is a field postmortem, not a software project. I am not publishing the customer's print. I looked for a cabinet SKU and did not get one, so I am not guessing.
+This is a field postmortem, not a software project. I am not publishing the customer's print. I do not have a stamped cabinet SKU. 50HCQ size 12 is a filter-and-silk fit, not a plate reading.
 
 ## Photos
 
-Live diagnostics, 19 Aug 2026 drop of the 23 June 2025 job. Copies. No site, customer, or coworker in frame.
+Both failed boards, on the bench, 24 Aug 2026.
 
-![Both LEDs on, kit sticker, 240 VAC fan relay](photos/01-leds-kit-sticker.jpg)
+![Older board, front](photos/05-original-front.jpg)
 
-DS2 green and DS1 red both lit. TE Potter & Brumfield fan relay rated N.C. 10 A / 240 VAC. Serial sticker 3112N309170. Kit sheet already on the panel.
+CEBD430856-06-RA. HK32EA0052016. EHEAT, DFT1/DFT2, INTERVAL TIME 30/60/90.
 
-![Board overview, Class-2 scorch](photos/02-board-scorch.jpg)
+![Older board, back](photos/06-original-back.jpg)
 
-Silkscreen 100269-05. Scorch at the 24 V resistor cluster. P2 field strip at the bottom. Factory 1/4" quick-connects along the top.
+No burn-through.
 
-![Factory harness](photos/03-factory-harness.jpg)
+![Newer board, front](photos/07-new-front.jpg)
 
-Pink factory leads marked J2-7. Yellow marked S4 / HI-PS. P6 header: TST PS DF C R O Y1.
+CEBD430856-07-RA. HK32EA0055024. Less aged.
 
-![P2 field strip and 9-17 kit note](photos/04-field-strip.jpg)
+![Newer board, back](photos/08-new-back.jpg)
 
-P2 landings: yellow, white, pink, grey, brown. Handwritten 9-17 on the replacement sticker. This board was already a service replacement.
+Scorch through the solder mask at the fan-relay / OF / L1 corner.
