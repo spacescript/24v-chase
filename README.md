@@ -1,16 +1,16 @@
 # 240 V on a 24 V defrost board
 
-**23 June 2025.** ATI plant, Millersburg, Oregon. Carrier packaged rooftop heat pump. Defrost control **HK32EA005** (CEPL130856-01-R). **10.5 hours** logged.
+**23 June 2025.** ATI plant, Millersburg, Oregon. Carrier packaged rooftop heat pump. Defrost control **HK32EA005** (CEPL130856-01-R). **10.5 hours** logged on this fix.
 
-I looked for a data plate and did not find one. The board silk is two-stage (`SPPCOMPSTG2`, `DFT1` / `DFT2`). Return filters were 16x24 or 18x24, not a 5-divisible size, pulled from a hood on the side of the cabinet. On this board family that combination lines up with Carrier 50HCQ size 12. I am calling it size 12 from the filters and the silk. I do not have a plate to confirm it.
+I looked for a data plate and did not find one due to files and photos being on a work phone. The board silk is two-stage (`SPPCOMPSTG2`, `DFT1` / `DFT2`). Return filters were 16x24 or 18x24, not a 5-divisible size, pulled from a hood on the side of the cabinet. On this board family that combination lines up with Carrier 50HCQ size 12. I am calling it size 12 from the filters and the silk. I do not have a plate to confirm it, unfortunately.
 
 ## Call
 
-The unit had recently had a contactor swapped, probably on a routine inspection. We also had to replace the compressor, though I am fuzzy on whether that happened before or after this chase. The unit went down soon after, and the defrost board had fried. Other techs swapped the board and called it good. Of course the unit went down again, the customer called us back, and this time I got sent.
+The unit had recently had a contactor swapped, probably on a routine inspection. We also had to replace the compressor, though I am fuzzy on whether that happened before or after this chase. The unit went down soon after, and the defrost board had fried. Other techs swapped the board and called it good- but the unit went down again, the customer called us back, and this time I got sent.
 
 ## What I saw
 
-I actually still have both boards, because this was a meaningful development for me.
+I actually kept both boards and still have them, because this was a meaningful development for me- it's when wiring diagrams really started making sense to me.
 
 The older board is CEBD430856-06-RA, barcode HK32EA0052016. It is aged, and there is no burn-through on the back.
 
